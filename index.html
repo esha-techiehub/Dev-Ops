@@ -1,0 +1,1429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Learning Hub - From Zero to Hero</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="#0969da" stroke="#0969da" stroke-width="2"/>
+                    <path d="M2 17L12 22L22 17" stroke="#0969da" stroke-width="2"/>
+                    <path d="M2 12L12 17L22 12" stroke="#0969da" stroke-width="2"/>
+                </svg>
+                <span>DevOps Hub</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#culture">Culture & Mindset</a></li>
+                <li><a href="#lifecycle">Lifecycle</a></li>
+                <li><a href="#architecture">3-Tier Architecture</a></li>
+                <li><a href="#syllabus">Full Syllabus</a></li>
+            </ul>
+            <button class="search-btn" id="searchBtn">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+                Search
+            </button>
+        </nav>
+    </header>
+
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-modal">
+            <input type="text" id="searchInput" placeholder="Search documentation..." autocomplete="off">
+            <div id="searchResults"></div>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Master DevOps Engineering</h1>
+                <p class="hero-subtitle">Complete DevOps learning path from fundamentals to advanced topics with hands-on AWS Cloud expertise</p>
+                <div class="hero-buttons">
+                    <a href="#introduction" class="btn btn-primary">Get Started</a>
+                    <a href="#syllabus" class="btn btn-secondary">View Syllabus</a>
+                </div>
+                <p class="hero-note">⚙️ Industry-ready curriculum • 🚀 Hands-on projects • ☁️ AWS Cloud focused</p>
+            </div>
+        </section>
+
+        <section id="overview" class="content-section">
+            <div class="section-header">
+                <h2>📘 Course Overview</h2>
+            </div>
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Industry-Ready Training</h3>
+                    <p>Designed to make you job-ready DevOps Engineers with strong expertise in AWS Cloud, CI/CD Automation, Infrastructure as Code, and Containerization.</p>
+                </div>
+                <div class="overview-card">
+                    <div class="card-icon">🧠</div>
+                    <h3>Hands-On Learning</h3>
+                    <p>Blends hands-on labs, real-world scenarios, and best practices to help you build, deploy, and manage scalable cloud-native applications.</p>
+                </div>
+                <div class="overview-card">
+                    <div class="card-icon">📚</div>
+                    <h3>Comprehensive Syllabus</h3>
+                    <p>Complete end-to-end DevOps learning path covering 12+ modules from Linux fundamentals to advanced topics like GitOps and Platform Engineering.</p>
+                </div>
+            </div>
+
+            <div class="tools-section">
+                <h3>⚙️ Technical Tools Covered</h3>
+                <div class="tools-grid">
+                    <div class="tool-category">
+                        <strong>Version Control</strong>
+                        <span>Git, GitHub, GitLab</span>
+                    </div>
+                    <div class="tool-category">
+                        <strong>CI/CD</strong>
+                        <span>Jenkins, GitHub Actions, GitLab CI, AWS CodePipeline</span>
+                    </div>
+                    <div class="tool-category">
+                        <strong>Containers</strong>
+                        <span>Docker, Kubernetes, Helm, AWS EKS</span>
+                    </div>
+                    <div class="tool-category">
+                        <strong>IaC</strong>
+                        <span>Terraform, Ansible, CloudFormation</span>
+                    </div>
+                    <div class="tool-category">
+                        <strong>Cloud Platform</strong>
+                        <span>AWS (EC2, S3, IAM, VPC, CloudWatch)</span>
+                    </div>
+                    <div class="tool-category">
+                        <strong>Monitoring</strong>
+                        <span>Prometheus, Grafana, CloudWatch</span>
+                    </div>
+                    <div class="tool-category">
+                        <strong>Security</strong>
+                        <span>AWS IAM, KMS, Secrets Manager, Trivy</span>
+                    </div>
+                    <div class="tool-category">
+                        <strong>Scripting</strong>
+                        <span>Bash, Shell Scripting, Python</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="who-can-join">
+                <h3>👩‍🎓 Who Can Join</h3>
+                <ul class="audience-list">
+                    <li>✅ College students (CS, IT, or any branch)</li>
+                    <li>✅ Freshers exploring DevOps / Cloud / Automation roles</li>
+                    <li>✅ Working professionals from System Admin / Developer / Cloud / QA backgrounds</li>
+                    <li>✅ Anyone preparing for AWS Certified DevOps Engineer, Terraform Associate, or Kubernetes CKA certifications</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="introduction" class="content-section">
+            <div class="section-header">
+                <h2>1.1 Introduction to DevOps</h2>
+            </div>
+            
+            <div class="content-block">
+                <h3>What is DevOps?</h3>
+                <p>DevOps is a culture and mindset, not just tools. It represents a fundamental shift in how organizations approach software development and operations, emphasizing collaboration, automation, and continuous improvement.</p>
+            </div>
+
+            <div id="culture" class="content-block">
+                <h3>Core Principles: The Three Ways</h3>
+                <p>From <em>The Phoenix Project</em> and <em>The DevOps Handbook</em>:</p>
+                
+                <div class="principle-card">
+                    <h4>The First Way: Systems Thinking (Flow)</h4>
+                    <ul>
+                        <li>View the entire delivery pipeline, not isolated parts</li>
+                        <li>Optimize the whole system, not local components</li>
+                        <li>Identify and remove bottlenecks</li>
+                        <li>Make work visible (Kanban, visualization)</li>
+                        <li>Limit work in progress (WIP)</li>
+                    </ul>
+                </div>
+
+                <div class="principle-card">
+                    <h4>The Second Way: Amplify Feedback Loops</h4>
+                    <ul>
+                        <li>Fast feedback from operations to development</li>
+                        <li>Monitor production and learn from it</li>
+                        <li>Automate feedback (alerts, dashboards)</li>
+                        <li>Short feedback cycles enable rapid iteration</li>
+                        <li>Shift-left: catch issues early</li>
+                    </ul>
+                </div>
+
+                <div class="principle-card">
+                    <h4>The Third Way: Continuous Experimentation & Learning</h4>
+                    <ul>
+                        <li>Foster experimentation and risk-taking</li>
+                        <li>Learn from failures (blameless post-mortems)</li>
+                        <li>Constant improvement (Kaizen mindset)</li>
+                        <li>Allocate time for improvement work</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h3>Cultural Mindset</h3>
+                
+                <div class="mindset-grid">
+                    <div class="mindset-card">
+                        <h4>1. Collaboration over Silos</h4>
+                        <ul>
+                            <li><strong>Break down walls:</strong> Dev, Ops, QA, Security work together</li>
+                            <li><strong>Shared ownership:</strong> "You build it, you run it"</li>
+                            <li><strong>Cross-functional teams:</strong> Everyone understands the full lifecycle</li>
+                            <li><strong>Communication:</strong> Open, transparent, frequent</li>
+                        </ul>
+                    </div>
+
+                    <div class="mindset-card">
+                        <h4>2. Blameless Culture</h4>
+                        <ul>
+                            <li>Failures are learning opportunities, not blame games</li>
+                            <li><strong>Blameless post-mortems:</strong> Focus on "what" and "why", not "who"</li>
+                            <li>Psychological safety: Safe to admit mistakes</li>
+                            <li>Systems thinking: People succeed or fail within systems</li>
+                        </ul>
+                    </div>
+
+                    <div class="mindset-card">
+                        <h4>3. Customer-Centric Focus</h4>
+                        <ul>
+                            <li>Build what users need, ship value quickly</li>
+                            <li>Measure outcomes, not just output</li>
+                            <li>Short feedback loops with end users</li>
+                            <li>Business value drives technical decisions</li>
+                        </ul>
+                    </div>
+
+                    <div class="mindset-card">
+                        <h4>4. Automation Mindset</h4>
+                        <ul>
+                            <li>"If it hurts, do it more often" — automate painful, repetitive tasks</li>
+                            <li>Automate to reduce toil and human error</li>
+                            <li>Infrastructure as Code: Version control everything</li>
+                            <li>Self-service: Enable developers to provision and deploy</li>
+                        </ul>
+                    </div>
+
+                    <div class="mindset-card">
+                        <h4>5. Continuous Improvement (Kaizen)</h4>
+                        <ul>
+                            <li>Iterate and improve processes</li>
+                            <li>Regular retrospectives</li>
+                            <li>Learning culture: Share knowledge, document lessons</li>
+                            <li>Technical debt: Address it incrementally</li>
+                        </ul>
+                    </div>
+
+                    <div class="mindset-card">
+                        <h4>6. Fail Fast, Learn Faster</h4>
+                        <ul>
+                            <li>Experimentation and iteration</li>
+                            <li>Small, frequent changes reduce risk</li>
+                            <li>Failures are expected; focus on recovery</li>
+                            <li>Resilience through chaos engineering</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h3>Key Behaviors & Practices</h3>
+                <div class="practices-list">
+                    <div class="practice-item">
+                        <strong>1. You Build It, You Run It</strong>
+                        <p>Developers take operational responsibility, encouraging building reliable, observable systems</p>
+                    </div>
+                    <div class="practice-item">
+                        <strong>2. Start Small, Think Big</strong>
+                        <p>Begin with pilot projects, demonstrate value, then scale with quick wins</p>
+                    </div>
+                    <div class="practice-item">
+                        <strong>3. Measure Everything</strong>
+                        <p>Metrics guide decisions - monitor application and business metrics to identify improvement areas</p>
+                    </div>
+                    <div class="practice-item">
+                        <strong>4. Documentation as Code</strong>
+                        <p>Knowledge shared and version-controlled - runbooks, architecture diagrams, decisions</p>
+                    </div>
+                    <div class="practice-item">
+                        <strong>5. Security as Everyone's Responsibility (DevSecOps)</strong>
+                        <p>Security built in, not bolted on - shift security left in the pipeline</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-block anti-patterns">
+                <h3>⚠️ Common Cultural Anti-Patterns to Avoid</h3>
+                <ul class="warning-list">
+                    <li>❌ <strong>Hero culture:</strong> Reliance on a few heroes</li>
+                    <li>❌ <strong>Blaming individuals:</strong> Focusing on who, not why</li>
+                    <li>❌ <strong>Resistance to change:</strong> "That's how we've always done it"</li>
+                    <li>❌ <strong>Tool-first thinking:</strong> Tools without culture change</li>
+                    <li>❌ <strong>Automation without understanding:</strong> Automating bad processes</li>
+                    <li>❌ <strong>Metric obsession:</strong> Vanity metrics over meaningful ones</li>
+                </ul>
+            </div>
+
+            <div class="content-block mindset-shift">
+                <h3>Mindset Shifts</h3>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Old Way</th>
+                            <th>DevOps Way</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>"It works on my machine"</td>
+                            <td>"If it's not deployed, it doesn't work"</td>
+                        </tr>
+                        <tr>
+                            <td>"That's not my job"</td>
+                            <td>"How can I help?"</td>
+                        </tr>
+                        <tr>
+                            <td>"We can't deploy on Friday"</td>
+                            <td>"We can deploy anytime"</td>
+                        </tr>
+                        <tr>
+                            <td>"Operations will handle it"</td>
+                            <td>"We're all responsible"</td>
+                        </tr>
+                        <tr>
+                            <td>"We'll fix it later"</td>
+                            <td>"Fix it now, automate it"</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="quote-block">
+                <blockquote>
+                    "We succeed together or fail together, we share responsibility, we automate pain, we learn from mistakes, and we deliver value continuously."
+                </blockquote>
+                <p class="quote-note">The culture is foundational—tools support it, but culture enables success.</p>
+            </div>
+        </section>
+
+        <section id="comparison" class="content-section">
+            <div class="section-header">
+                <h2>DevOps vs Traditional IT Models</h2>
+            </div>
+
+            <div class="content-block">
+                <h3>Traditional IT Model (Waterfall/Siloed)</h3>
+                
+                <h4>Characteristics:</h4>
+                <ul>
+                    <li><strong>Separation of teams:</strong>
+                        <ul>
+                            <li>Development team: Writes code in isolation</li>
+                            <li>QA team: Tests after development completes</li>
+                            <li>Operations team: Manages infrastructure separately</li>
+                            <li>Security team: Audits at the end</li>
+                            <li>Business team: Provides requirements upfront</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="example-box">
+                    <h4>Real-world example: Traditional Banking System</h4>
+                    <p>A bank builds a mobile banking app using the waterfall model:</p>
+                    <ul class="timeline-list">
+                        <li>Months 1-2: Business analysts gather requirements</li>
+                        <li>Months 3-5: Architects design the system</li>
+                        <li>Months 6-9: Developers write code (no visibility to Ops)</li>
+                        <li>Months 10-11: QA finds 500+ bugs</li>
+                        <li>Month 12: Developers fix bugs (often introducing new ones)</li>
+                        <li>Month 13: "Handoff meeting" - Dev throws code over the wall to Ops</li>
+                        <li>Month 14: Ops team discovers code doesn't work in production</li>
+                        <li>Months 15-16: Finger-pointing, rework, delayed launch</li>
+                    </ul>
+                    <div class="problem-badge">
+                        <strong>Problems:</strong> 16-month delivery cycle, weekend deployments, all-nighters, blame culture
+                    </div>
+                </div>
+
+                <h3>DevOps Model (Agile/Integrated)</h3>
+                
+                <h4>Characteristics:</h4>
+                <ul>
+                    <li><strong>Unified teams:</strong>
+                        <ul>
+                            <li>Cross-functional: Dev, Ops, QA, Security work together</li>
+                            <li>Shared ownership: "You build it, you run it"</li>
+                            <li>Continuous collaboration throughout the lifecycle</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="example-box success">
+                    <h4>Real-world example: Modern FinTech Startup</h4>
+                    <p>Same mobile banking app built with DevOps:</p>
+                    <ul class="timeline-list">
+                        <li><strong>Day 1-5: Sprint planning</strong> - Dev, Ops, Security, Product meet</li>
+                        <li><strong>Day 6-10: Development</strong> - Code with production in mind, automated testing</li>
+                        <li><strong>Day 11-12: Testing</strong> - Automated tests catch bugs immediately</li>
+                        <li><strong>Day 13: Deployment</strong> - Canary deployment to 5% of users</li>
+                        <li><strong>Day 14-15: Operations</strong> - Developers monitor their code, real-time alerts</li>
+                    </ul>
+                    <div class="success-badge">
+                        <strong>Result:</strong> 2-week delivery cycle, multiple deployments per day, 99.9% uptime, 5-minute MTTR
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h3>Comparison Table</h3>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Aspect</th>
+                            <th>Traditional IT</th>
+                            <th>DevOps</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Team Structure</td>
+                            <td>Siloed departments</td>
+                            <td>Cross-functional teams</td>
+                        </tr>
+                        <tr>
+                            <td>Communication</td>
+                            <td>Handoff meetings, tickets</td>
+                            <td>Continuous collaboration</td>
+                        </tr>
+                        <tr>
+                            <td>Release Frequency</td>
+                            <td>Monthly/Quarterly</td>
+                            <td>Daily/Multiple times per day</td>
+                        </tr>
+                        <tr>
+                            <td>Failure Attitude</td>
+                            <td>Blame individuals</td>
+                            <td>Learn from failures (blameless)</td>
+                        </tr>
+                        <tr>
+                            <td>Testing</td>
+                            <td>After development</td>
+                            <td>Continuous testing (shift-left)</td>
+                        </tr>
+                        <tr>
+                            <td>Deployment</td>
+                            <td>Manual, risky, infrequent</td>
+                            <td>Automated, frequent, low-risk</td>
+                        </tr>
+                        <tr>
+                            <td>Monitoring</td>
+                            <td>Reactive (after incidents)</td>
+                            <td>Proactive (real-time)</td>
+                        </tr>
+                        <tr>
+                            <td>Change Management</td>
+                            <td>Change approval boards</td>
+                            <td>Automated, low-risk changes</td>
+                        </tr>
+                        <tr>
+                            <td>Feedback Loop</td>
+                            <td>Weeks/Months</td>
+                            <td>Minutes/Hours</td>
+                        </tr>
+                        <tr>
+                            <td>Infrastructure</td>
+                            <td>Static, manual</td>
+                            <td>Dynamic, code-driven</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="benefits" class="content-section">
+            <div class="section-header">
+                <h2>Benefits and Challenges of DevOps</h2>
+            </div>
+
+            <div class="content-block">
+                <h3>Benefits of DevOps</h3>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <h4>1. Faster Time to Market</h4>
+                        <p><strong>Example: Netflix</strong></p>
+                        <ul>
+                            <li>Multiple deployments per day</li>
+                            <li>Features reach users in hours</li>
+                            <li>A/B testing enables quick iteration</li>
+                        </ul>
+                        <div class="impact-badge">Competitive advantage & quicker feedback</div>
+                    </div>
+
+                    <div class="benefit-card">
+                        <h4>2. Increased Deployment Frequency</h4>
+                        <p><strong>Example: Amazon</strong></p>
+                        <ul>
+                            <li>11,000+ deployments per day (2011)</li>
+                            <li>Small, low-risk changes</li>
+                            <li>Quick rollbacks</li>
+                        </ul>
+                        <div class="impact-badge">From 1 deployment/month to 100+/day</div>
+                    </div>
+
+                    <div class="benefit-card">
+                        <h4>3. Lower Failure Rate</h4>
+                        <p><strong>Example: Etsy</strong></p>
+                        <ul>
+                            <li>50% fewer production failures</li>
+                            <li>Automated rollback within minutes</li>
+                            <li>Blameless post-mortems</li>
+                        </ul>
+                        <div class="impact-badge">Smaller changes fail less</div>
+                    </div>
+
+                    <div class="benefit-card">
+                        <h4>4. Faster Recovery Time</h4>
+                        <p><strong>Example: GitHub</strong></p>
+                        <ul>
+                            <li>Auto-scaling within 2 minutes</li>
+                            <li>Automated failover</li>
+                            <li>MTTR: 5 minutes vs 2-4 hours traditional</li>
+                        </ul>
+                        <div class="impact-badge">Rapid incident response</div>
+                    </div>
+
+                    <div class="benefit-card">
+                        <h4>5. Improved Collaboration</h4>
+                        <p><strong>Example: Spotify</strong></p>
+                        <ul>
+                            <li>Squad, Tribe, Chapter, Guild model</li>
+                            <li>Developers understand infrastructure</li>
+                            <li>Shared ownership</li>
+                        </ul>
+                        <div class="impact-badge">From "not my problem" to "our problem"</div>
+                    </div>
+
+                    <div class="benefit-card">
+                        <h4>6. Better Quality</h4>
+                        <p><strong>Example: Microsoft</strong></p>
+                        <ul>
+                            <li>90% reduction in security vulnerabilities</li>
+                            <li>50% reduction in production bugs</li>
+                            <li>Automated security scanning</li>
+                        </ul>
+                        <div class="impact-badge">Quality built-in, not bolted-on</div>
+                    </div>
+
+                    <div class="benefit-card">
+                        <h4>7. Reduced Costs</h4>
+                        <p><strong>Example: Target</strong></p>
+                        <ul>
+                            <li>40% reduction in infrastructure costs</li>
+                            <li>Auto-scaling reduces waste</li>
+                            <li>Less manual work</li>
+                        </ul>
+                        <div class="impact-badge">Automation drives efficiency</div>
+                    </div>
+
+                    <div class="benefit-card">
+                        <h4>8. Increased Innovation</h4>
+                        <p><strong>Example: Google</strong></p>
+                        <ul>
+                            <li>20% time + DevOps culture</li>
+                            <li>Fail fast, learn faster</li>
+                            <li>Low-risk experimentation</li>
+                        </ul>
+                        <div class="impact-badge">Innovation through rapid testing</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h3>Challenges of DevOps</h3>
+                
+                <div class="challenges-grid">
+                    <div class="challenge-card">
+                        <h4>1. Cultural Resistance</h4>
+                        <p><strong>Challenge:</strong> "That's not my job" mentality, fear of losing control</p>
+                        <p><strong>Solution:</strong></p>
+                        <ul>
+                            <li>Executive support and clear communication</li>
+                            <li>Training and gradual adoption</li>
+                            <li>Celebrate early wins</li>
+                        </ul>
+                    </div>
+
+                    <div class="challenge-card">
+                        <h4>2. Tool Overload</h4>
+                        <p><strong>Challenge:</strong> Too many tools without strategy, poor integration</p>
+                        <p><strong>Solution:</strong></p>
+                        <ul>
+                            <li>Standardize on a core set</li>
+                            <li>Integrate tools properly</li>
+                            <li>Document tool usage</li>
+                        </ul>
+                    </div>
+
+                    <div class="challenge-card">
+                        <h4>3. Security Concerns (DevSecOps)</h4>
+                        <p><strong>Example:</strong> Equifax breach - $700M+ in damages</p>
+                        <p><strong>Solution:</strong></p>
+                        <ul>
+                            <li>Shift security left</li>
+                            <li>Automate security scanning</li>
+                            <li>Secrets management</li>
+                        </ul>
+                    </div>
+
+                    <div class="challenge-card">
+                        <h4>4. Skills Gap</h4>
+                        <p><strong>Challenge:</strong> Developers lack infrastructure knowledge, Ops lack development skills</p>
+                        <p><strong>Solution:</strong></p>
+                        <ul>
+                            <li>Training programs</li>
+                            <li>Pair programming</li>
+                            <li>External consultants/mentors</li>
+                        </ul>
+                    </div>
+
+                    <div class="challenge-card">
+                        <h4>5. Legacy Systems</h4>
+                        <p><strong>Challenge:</strong> 30-year-old mainframes, cannot containerize</p>
+                        <p><strong>Solution:</strong></p>
+                        <ul>
+                            <li>Strangler Fig pattern</li>
+                            <li>API wrappers around legacy</li>
+                            <li>Modernize incrementally</li>
+                        </ul>
+                    </div>
+
+                    <div class="challenge-card">
+                        <h4>6. Measuring Success</h4>
+                        <p><strong>Challenge:</strong> Focusing on vanity metrics</p>
+                        <p><strong>Solution:</strong></p>
+                        <ul>
+                            <li>DORA metrics (deployment frequency, lead time, MTTR, change failure rate)</li>
+                            <li>Business impact metrics</li>
+                            <li>Customer satisfaction</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="lifecycle" class="content-section">
+            <div class="section-header">
+                <h2>DevOps Lifecycle</h2>
+                <p class="section-subtitle">Plan → Code → Build → Test → Release → Deploy → Operate → Monitor</p>
+            </div>
+
+            <div class="lifecycle-diagram">
+                <div class="lifecycle-phase">
+                    <div class="phase-number">1</div>
+                    <h4>PLAN</h4>
+                    <p>Sprint planning, requirements, architecture design</p>
+                    <div class="phase-tools">Jira, Confluence, Azure DevOps</div>
+                </div>
+                <div class="lifecycle-arrow">→</div>
+                <div class="lifecycle-phase">
+                    <div class="phase-number">2</div>
+                    <h4>CODE</h4>
+                    <p>Writing code, version control, code reviews</p>
+                    <div class="phase-tools">Git, GitHub, VS Code</div>
+                </div>
+                <div class="lifecycle-arrow">→</div>
+                <div class="lifecycle-phase">
+                    <div class="phase-number">3</div>
+                    <h4>BUILD</h4>
+                    <p>Compile, create artifacts, Docker images</p>
+                    <div class="phase-tools">Jenkins, Maven, Docker</div>
+                </div>
+                <div class="lifecycle-arrow">→</div>
+                <div class="lifecycle-phase">
+                    <div class="phase-number">4</div>
+                    <h4>TEST</h4>
+                    <p>Automated testing, security scanning</p>
+                    <div class="phase-tools">JUnit, Snyk, JMeter</div>
+                </div>
+                <div class="lifecycle-arrow">→</div>
+                <div class="lifecycle-phase">
+                    <div class="phase-number">5</div>
+                    <h4>RELEASE</h4>
+                    <p>Version tagging, staging deployment</p>
+                    <div class="phase-tools">Git tags, GitHub Releases</div>
+                </div>
+                <div class="lifecycle-arrow">→</div>
+                <div class="lifecycle-phase">
+                    <div class="phase-number">6</div>
+                    <h4>DEPLOY</h4>
+                    <p>Automated deployment strategies</p>
+                    <div class="phase-tools">Kubernetes, ArgoCD</div>
+                </div>
+                <div class="lifecycle-arrow">→</div>
+                <div class="lifecycle-phase">
+                    <div class="phase-number">7</div>
+                    <h4>OPERATE</h4>
+                    <p>Infrastructure management, incident response</p>
+                    <div class="phase-tools">Kubernetes, PagerDuty</div>
+                </div>
+                <div class="lifecycle-arrow">→</div>
+                <div class="lifecycle-phase">
+                    <div class="phase-number">8</div>
+                    <h4>MONITOR</h4>
+                    <p>APM, logging, metrics, feedback</p>
+                    <div class="phase-tools">Prometheus, Grafana, ELK</div>
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h3>Complete Lifecycle Example: Flash Sale Feature</h3>
+                <p><strong>Timeline:</strong> 2-week sprint</p>
+                
+                <div class="timeline-table">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Phase</th>
+                                <th>Timeline</th>
+                                <th>Activities</th>
+                                <th>Tools Used</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>PLAN</td>
+                                <td>Day 1-2</td>
+                                <td>Sprint planning, architecture design</td>
+                                <td>Jira, Confluence, Terraform</td>
+                            </tr>
+                            <tr>
+                                <td>CODE</td>
+                                <td>Day 3-7</td>
+                                <td>Feature development, code reviews</td>
+                                <td>Git, GitHub, VS Code</td>
+                            </tr>
+                            <tr>
+                                <td>BUILD</td>
+                                <td>Day 3-7</td>
+                                <td>CI/CD pipeline runs on every commit</td>
+                                <td>Jenkins, Docker</td>
+                            </tr>
+                            <tr>
+                                <td>TEST</td>
+                                <td>Day 3-8</td>
+                                <td>Automated testing, security scanning</td>
+                                <td>pytest, Snyk, k6</td>
+                            </tr>
+                            <tr>
+                                <td>RELEASE</td>
+                                <td>Day 9</td>
+                                <td>Version tagging, staging deployment</td>
+                                <td>Git tags, Kubernetes</td>
+                            </tr>
+                            <tr>
+                                <td>DEPLOY</td>
+                                <td>Day 10</td>
+                                <td>Canary deployment to production</td>
+                                <td>Kubernetes, ArgoCD</td>
+                            </tr>
+                            <tr>
+                                <td>OPERATE</td>
+                                <td>Day 10-14</td>
+                                <td>Monitoring, incident response</td>
+                                <td>Kubernetes, PagerDuty</td>
+                            </tr>
+                            <tr>
+                                <td>MONITOR</td>
+                                <td>Day 10-14</td>
+                                <td>Metrics collection, feedback analysis</td>
+                                <td>Prometheus, Grafana, ELK</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="quote-block">
+                    <blockquote>
+                        "DevOps lifecycle is continuous; each phase feeds the next. Automation across phases reduces risk and time. Monitoring drives planning and prioritization."
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section id="architecture" class="content-section">
+            <div class="section-header">
+                <h2>📘 3-Tier Application Architecture</h2>
+                <p class="section-subtitle">Complete Guide from Zero to Advanced</p>
+            </div>
+
+            <div class="content-block">
+                <h3>Definition</h3>
+                <p>A <strong>3-tier architecture</strong> is a software design pattern that separates an application into three logical layers:</p>
+                <ol>
+                    <li><strong>Presentation Layer</strong> (Frontend/UI)</li>
+                    <li><strong>Application Layer</strong> (Backend/Business Logic)</li>
+                    <li><strong>Data Layer</strong> (Database)</li>
+                </ol>
+                <p>Each layer works independently and communicates through APIs.</p>
+            </div>
+
+            <div class="architecture-diagram">
+                <div class="arch-layer presentation">
+                    <h4>Presentation Layer</h4>
+                    <p>User Interface</p>
+                    <div class="tech-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Angular</span>
+                    </div>
+                </div>
+                <div class="arch-arrow">↓</div>
+                <div class="arch-layer application">
+                    <h4>Application Layer</h4>
+                    <p>Business Logic</p>
+                    <div class="tech-tags">
+                        <span>Node.js</span>
+                        <span>Java</span>
+                        <span>Python</span>
+                        <span>Spring Boot</span>
+                    </div>
+                </div>
+                <div class="arch-arrow">↓</div>
+                <div class="arch-layer data">
+                    <h4>Data Layer</h4>
+                    <p>Database Storage</p>
+                    <div class="tech-tags">
+                        <span>MySQL</span>
+                        <span>PostgreSQL</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h3>Core Concept: Separation of Concerns (SoC)</h3>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Layer</th>
+                            <th>Responsibility</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>UI</td>
+                            <td>User interaction</td>
+                        </tr>
+                        <tr>
+                            <td>Logic</td>
+                            <td>Business processing</td>
+                        </tr>
+                        <tr>
+                            <td>Data</td>
+                            <td>Storage</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="content-block">
+                <h3>Request Flow</h3>
+                <div class="flow-diagram">
+                    User → Frontend → Backend → Database → Backend → Frontend → User
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h3>Real-World Example: E-commerce System</h3>
+                <div class="example-box">
+                    <ul>
+                        <li><strong>Frontend:</strong> Website UI (product catalog, shopping cart)</li>
+                        <li><strong>Backend:</strong> Order processing, payment logic, inventory management</li>
+                        <li><strong>Database:</strong> Product data, user accounts, order history</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h3>Cloud Architecture with 3-Tier</h3>
+                <div class="flow-diagram">
+                    User → CDN → Load Balancer → Backend Servers (Auto-scaled) → Database (Replicated)
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h3>DevOps Role in 3-Tier Architecture</h3>
+                <ul>
+                    <li>CI/CD pipelines for automated deployments</li>
+                    <li>Docker containers for each tier</li>
+                    <li>Kubernetes orchestration for scaling</li>
+                    <li>Monitoring systems (Prometheus, Grafana)</li>
+                    <li>Infrastructure as Code (Terraform)</li>
+                </ul>
+            </div>
+
+            <div class="content-block">
+                <h3>DevSecOps Security by Layer</h3>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Layer</th>
+                            <th>Security Measures</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Frontend</td>
+                            <td>Input validation, XSS protection, CORS policies</td>
+                        </tr>
+                        <tr>
+                            <td>Backend</td>
+                            <td>Authentication, Authorization, Rate limiting, API security</td>
+                        </tr>
+                        <tr>
+                            <td>Database</td>
+                            <td>Encryption at rest, Encryption in transit, Access controls</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="content-block">
+                <h3>Advanced Concepts</h3>
+                
+                <h4>Logical vs Physical Tier</h4>
+                <ul>
+                    <li><strong>Logical:</strong> Code separation (how you organize your code)</li>
+                    <li><strong>Physical:</strong> Deployment separation (where components run)</li>
+                </ul>
+                <p>You can have logical 3-tier on a single server (dev environment) or physical 3-tier on separate servers (production).</p>
+
+                <h4>Scaling Strategies</h4>
+                <ul>
+                    <li><strong>Frontend:</strong> CDN (CloudFront, Cloudflare), Static asset optimization</li>
+                    <li><strong>Backend:</strong> Horizontal scaling (add more servers), Load balancing</li>
+                    <li><strong>Database:</strong> Replication (read replicas), Sharding, Caching (Redis)</li>
+                </ul>
+            </div>
+
+            <div class="pros-cons-grid">
+                <div class="pros-card">
+                    <h3>✅ Advantages</h3>
+                    <ul>
+                        <li><strong>Scalability:</strong> Scale each tier independently</li>
+                        <li><strong>Maintainability:</strong> Changes in one tier don't affect others</li>
+                        <li><strong>Security:</strong> Layer-wise security controls</li>
+                        <li><strong>Flexibility:</strong> Technology independence per tier</li>
+                        <li><strong>Reusability:</strong> Backend APIs can serve multiple frontends</li>
+                    </ul>
+                </div>
+                <div class="cons-card">
+                    <h3>❌ Disadvantages</h3>
+                    <ul>
+                        <li><strong>Complexity:</strong> More moving parts to manage</li>
+                        <li><strong>Latency:</strong> Network calls between tiers add delay</li>
+                        <li><strong>Deployment overhead:</strong> Coordinating multi-tier deployments</li>
+                        <li><strong>Debugging:</strong> Issues can span multiple tiers</li>
+                        <li><strong>Cost:</strong> More infrastructure to maintain</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="interview-section">
+                <h3>🎯 Interview Questions Summary</h3>
+                <div class="interview-levels">
+                    <div class="level-box">
+                        <strong>🟢 Basic (20 questions)</strong>
+                        <p>What is 3-tier architecture? What are the three tiers? Why use it?</p>
+                    </div>
+                    <div class="level-box">
+                        <strong>🔵 Intermediate (20 questions)</strong>
+                        <p>REST APIs, Load balancing, Caching, Horizontal vs Vertical scaling, Docker, CI/CD</p>
+                    </div>
+                    <div class="level-box">
+                        <strong>🔴 Advanced (20 questions)</strong>
+                        <p>Microservices comparison, CAP theorem, Sharding, Service mesh, Kubernetes, Blue-green deployment</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quote-block">
+                <blockquote>
+                    "3-tier architecture is the foundation of modern applications and is deeply connected with DevOps, Cloud Computing, DevSecOps, and Microservices."
+                </blockquote>
+            </div>
+        </section>
+
+        <section id="syllabus" class="content-section">
+            <div class="section-header">
+                <h2>📚 Complete DevOps Syllabus</h2>
+                <p class="section-subtitle">Basic to Advanced - 12 Comprehensive Modules</p>
+            </div>
+
+            <div class="syllabus-overview">
+                <div class="level-box beginner">
+                    <h4>Beginner Level (Months 1-3)</h4>
+                    <ul>
+                        <li>Linux fundamentals and shell scripting</li>
+                        <li>Git version control</li>
+                        <li>Basic CI/CD with Jenkins</li>
+                        <li>Docker fundamentals</li>
+                    </ul>
+                </div>
+                <div class="level-box intermediate">
+                    <h4>Intermediate Level (Months 4-6)</h4>
+                    <ul>
+                        <li>Kubernetes basics</li>
+                        <li>Infrastructure as Code (Terraform, Ansible)</li>
+                        <li>Cloud platforms (AWS/Azure/GCP)</li>
+                        <li>Monitoring and logging</li>
+                    </ul>
+                </div>
+                <div class="level-box advanced">
+                    <h4>Advanced Level (Months 7-12)</h4>
+                    <ul>
+                        <li>Advanced Kubernetes</li>
+                        <li>GitOps</li>
+                        <li>DevSecOps</li>
+                        <li>Microservices and service mesh</li>
+                        <li>Chaos engineering</li>
+                        <li>Platform engineering</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="modules-container">
+                <div class="module-card">
+                    <div class="module-header">
+                        <h3>MODULE 1: FOUNDATIONS</h3>
+                    </div>
+                    <div class="module-topics">
+                        <h4>1.1 Introduction to DevOps</h4>
+                        <ul>
+                            <li>What is DevOps?</li>
+                            <li>DevOps culture and mindset and principles</li>
+                            <li>DevOps vs traditional IT models</li>
+                            <li>Benefits and challenges of DevOps</li>
+                            <li>DevOps lifecycle</li>
+                        </ul>
+                        
+                        <h4>1.2 Linux Fundamentals</h4>
+                        <ul>
+                            <li>Linux basics and command line</li>
+                            <li>File system navigation</li>
+                            <li>File permissions and ownership</li>
+                            <li>Process management</li>
+                            <li>Shell scripting basics</li>
+                            <li>Package management (yum, apt)</li>
+                            <li>Network configuration</li>
+                        </ul>
+                        
+                        <h4>1.3 Version Control Systems</h4>
+                        <ul>
+                            <li>Git fundamentals</li>
+                            <li>Branching and merging strategies</li>
+                            <li>Pull requests and code reviews</li>
+                            <li>Git workflows (GitFlow, GitHub Flow)</li>
+                            <li>Advanced Git concepts (rebase, cherry-pick, hooks)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-header">
+                        <h3>MODULE 2: BUILD & AUTOMATION</h3>
+                    </div>
+                    <div class="module-topics">
+                        <h4>2.1 Build Tools & Package Management</h4>
+                        <ul>
+                            <li>Maven, Gradle (Java)</li>
+                            <li>npm, yarn (Node.js)</li>
+                            <li>pip, poetry (Python)</li>
+                            <li>Build optimization techniques</li>
+                        </ul>
+                        
+                        <h4>2.2 Continuous Integration (CI)</h4>
+                        <ul>
+                            <li>CI concepts and benefits</li>
+                            <li>Automated builds and testing</li>
+                            <li>Code quality checks (SonarQube, ESLint)</li>
+                            <li>Artifact management (Nexus, Artifactory)</li>
+                        </ul>
+                        
+                        <h4>2.3 CI/CD Tools</h4>
+                        <ul>
+                            <li><strong>Jenkins:</strong> Pipelines, plugins, distributed builds</li>
+                            <li><strong>GitLab CI/CD:</strong> Runners, CI/CD variables</li>
+                            <li><strong>GitHub Actions:</strong> Workflows, self-hosted runners</li>
+                            <li><strong>Azure DevOps:</strong> YAML pipelines, artifacts</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-header">
+                        <h3>MODULE 3: CONTAINERIZATION</h3>
+                    </div>
+                    <div class="module-topics">
+                        <h4>3.1 Docker Fundamentals</h4>
+                        <ul>
+                            <li>Containerization concepts</li>
+                            <li>Docker architecture</li>
+                            <li>Dockerfile creation and best practices</li>
+                            <li>Docker networking and volumes</li>
+                            <li>Docker Compose</li>
+                            <li>Multi-stage builds</li>
+                        </ul>
+                        
+                        <h4>3.2 Kubernetes</h4>
+                        <ul>
+                            <li><strong>Basics:</strong> Architecture, Pods, Services, Deployments</li>
+                            <li><strong>Objects:</strong> ReplicaSets, StatefulSets, DaemonSets</li>
+                            <li><strong>Advanced:</strong> Helm charts, Autoscaling (HPA, VPA), RBAC, Network Policies</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-header">
+                        <h3>MODULE 4: INFRASTRUCTURE AS CODE</h3>
+                    </div>
+                    <div class="module-topics">
+                        <h4>4.1 Configuration Management</h4>
+                        <ul>
+                            <li><strong>Ansible:</strong> Playbooks, roles, inventory, Ansible Vault</li>
+                            <li><strong>Puppet:</strong> Manifests and modules</li>
+                            <li><strong>Chef:</strong> Cookbooks and recipes</li>
+                        </ul>
+                        
+                        <h4>4.2 Infrastructure Provisioning</h4>
+                        <ul>
+                            <li><strong>Terraform:</strong> Providers, resources, state management, modules, workspaces</li>
+                            <li><strong>CloudFormation</strong> (AWS)</li>
+                            <li><strong>ARM Templates</strong> (Azure)</li>
+                        </ul>
+                        
+                        <h4>4.3 Infrastructure Patterns</h4>
+                        <ul>
+                            <li>Immutable infrastructure</li>
+                            <li>Blue-green deployments</li>
+                            <li>Canary deployments</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-header">
+                        <h3>MODULE 5: CLOUD PLATFORMS</h3>
+                    </div>
+                    <div class="module-topics">
+                        <h4>5.1 Amazon Web Services (AWS)</h4>
+                        <ul>
+                            <li><strong>Core:</strong> EC2, VPC, S3, RDS, Lambda, ELB, Auto Scaling</li>
+                            <li><strong>DevOps:</strong> ECS/EKS, CloudFormation, CodePipeline, Systems Manager</li>
+                        </ul>
+                        
+                        <h4>5.2 Microsoft Azure</h4>
+                        <ul>
+                            <li><strong>Core:</strong> Virtual Machines, VNets, Blob Storage, Azure Functions</li>
+                            <li><strong>DevOps:</strong> Azure DevOps, AKS, ARM</li>
+                        </ul>
+                        
+                        <h4>5.3 Google Cloud Platform</h4>
+                        <ul>
+                            <li><strong>Core:</strong> Compute Engine, Cloud Storage, Cloud Functions</li>
+                            <li><strong>DevOps:</strong> GKE, Cloud Build, Cloud Deploy</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-header">
+                        <h3>MODULE 6: CONTINUOUS DEPLOYMENT</h3>
+                    </div>
+                    <div class="module-topics">
+                        <h4>6.1 Deployment Strategies</h4>
+                        <ul>
+                            <li>Continuous Deployment vs Continuous Delivery</li>
+                            <li>Deployment patterns (Rolling, Blue-Green, Canary)</li>
+                            <li>Zero-downtime deployments</li>
+                        </ul>
+                        
+                        <h4>6.2 Release Management</h4>
+                        <ul>
+                            <li>Versioning strategies</li>
+                            <li>Rollback strategies</li>
+                            <li>Feature flags</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-header">
+                        <h3>MODULE 7: MONITORING & OBSERVABILITY</h3>
+                    </div>
+                    <div class="module-topics">
+                        <h4>7.1 Monitoring Fundamentals</h4>
+                        <ul>
+                            <li>Metrics, Logs, and Traces (Three Pillars)</li>
+                            <li>SLIs, SLOs, and SLAs</li>
+                            <li>Alerting strategies</li>
+                        </ul>
+                        
+                        <h4>7.2 Monitoring Tools</h4>
+                        <ul>
+                            <li><strong>Prometheus:</strong> Metrics collection, PromQL, Alertmanager</li>
+                            <li><strong>Grafana:</strong> Dashboard creation, visualization</li>
+                            <li>Commercial: Datadog, New Relic, Dynatrace</li>
+                        </ul>
+                        
+                        <h4>7.3 Logging</h4>
+                        <ul>
+                            <li><strong>ELK Stack:</strong> Elasticsearch, Logstash, Kibana</li>
+                            <li>Cloud logging: CloudWatch, Azure Monitor</li>
+                        </ul>
+                        
+                        <h4>7.4 Distributed Tracing</h4>
+                        <ul>
+                            <li>OpenTelemetry</li>
+                            <li>Jaeger, Zipkin</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-header">
+                        <h3>MODULE 8: SECURITY (DevSecOps)</h3>
+                    </div>
+                    <div class="module-topics">
+                        <h4>8.1 Security Fundamentals</h4>
+                        <ul>
+                            <li>Shift-left security</li>
+                            <li>Threat modeling</li>
+                            <li>Vulnerability management</li>
+                        </ul>
+                        
+                        <h4>8.2 Security Scanning</h4>
+                        <ul>
+                            <li><strong>SAST:</strong> SonarQube, Checkmarx</li>
+                            <li><strong>DAST:</strong> OWASP ZAP, Burp Suite</li>
+                            <li><strong>SCA:</strong> Snyk, Dependabot</li>
+                            <li><strong>Container:</strong> Trivy, Clair</li>
+                        </ul>
+                        
+                        <h4>8.3 Secrets Management</h4>
+                        <ul>
+                            <li><strong>HashiCorp Vault:</strong> Secret engines, authentication, policies</li>
+                            <li>Cloud: AWS Secrets Manager, Azure Key Vault, GCP Secret Manager</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-header">
+                        <h3>MODULE 9: PERFORMANCE & OPTIMIZATION</h3>
+                    </div>
+                    <div class="module-topics">
+                        <h4>9.1 Performance Testing</h4>
+                        <ul>
+                            <li>Load testing (JMeter, Locust, Gatling)</li>
+                            <li>Stress and spike testing</li>
+                            <li>Capacity planning</li>
+                        </ul>
+                        
+                        <h4>9.2 Cost Optimization</h4>
+                        <ul>
+                            <li>Cloud cost management strategies</li>
+                            <li>Resource optimization</li>
+                            <li>Auto-scaling strategies</li>
+                        </ul>
+                        
+                        <h4>9.3 Database DevOps</h4>
+                        <ul>
+                            <li>Database migrations</li>
+                            <li>Database as Code</li>
+                            <li>Deployment automation (Flyway, Liquibase)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-header">
+                        <h3>MODULE 10: ADVANCED TOPICS</h3>
+                    </div>
+                    <div class="module-topics">
+                        <h4>10.1 Microservices Architecture</h4>
+                        <ul>
+                            <li>Microservices patterns and anti-patterns</li>
+                            <li>Service mesh (Istio, Linkerd)</li>
+                            <li>API Gateway patterns</li>
+                        </ul>
+                        
+                        <h4>10.2 Serverless</h4>
+                        <ul>
+                            <li>AWS Lambda, Azure Functions, Google Cloud Functions</li>
+                            <li>Serverless frameworks</li>
+                        </ul>
+                        
+                        <h4>10.3 GitOps</h4>
+                        <ul>
+                            <li>GitOps principles</li>
+                            <li><strong>Tools:</strong> ArgoCD, Flux</li>
+                            <li>Progressive delivery</li>
+                        </ul>
+                        
+                        <h4>10.4 Chaos Engineering</h4>
+                        <ul>
+                            <li>Chaos engineering principles</li>
+                            <li><strong>Tools:</strong> Chaos Monkey, Litmus</li>
+                        </ul>
+                        
+                        <h4>10.5 Platform Engineering</h4>
+                        <ul>
+                            <li>Internal Developer Platforms (IDP)</li>
+                            <li>Backstage</li>
+                            <li>Developer experience</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-header">
+                        <h3>MODULE 11: PRACTICAL PROJECTS</h3>
+                    </div>
+                    <div class="module-topics">
+                        <h4>11.1 End-to-End Projects</h4>
+                        <ul>
+                            <li>Building a containerized application with CI/CD</li>
+                            <li>Multi-tier application on Kubernetes</li>
+                            <li>Infrastructure automation with Terraform</li>
+                            <li>Complete monitoring setup (Prometheus + Grafana)</li>
+                            <li>DevSecOps pipeline with security scans</li>
+                            <li>Multi-cloud deployment strategy</li>
+                        </ul>
+                        
+                        <h4>11.2 Final Capstone Project</h4>
+                        <p><strong>End-to-End DevOps Pipeline with AWS:</strong></p>
+                        <ul>
+                            <li>Source: GitHub</li>
+                            <li>CI/CD: Jenkins</li>
+                            <li>IaC: Terraform</li>
+                            <li>Config Mgmt: Ansible</li>
+                            <li>Containers: Docker + Kubernetes (EKS)</li>
+                            <li>Monitoring: CloudWatch / Grafana</li>
+                            <li>Security: IAM + Secrets Manager</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-header">
+                        <h3>MODULE 12: EMERGING TECHNOLOGIES</h3>
+                    </div>
+                    <div class="module-topics">
+                        <h4>12.1 AI/ML in DevOps (AIOps)</h4>
+                        <ul>
+                            <li>AIOps platforms</li>
+                            <li>Anomaly detection</li>
+                            <li>Predictive analytics</li>
+                        </ul>
+                        
+                        <h4>12.2 Edge Computing</h4>
+                        <ul>
+                            <li>Edge deployment strategies</li>
+                            <li>IoT DevOps</li>
+                        </ul>
+                        
+                        <h4>12.3 Continuous Learning</h4>
+                        <ul>
+                            <li><strong>Certifications:</strong>
+                                <ul>
+                                    <li>AWS Certified DevOps Engineer</li>
+                                    <li>Azure DevOps Engineer Expert</li>
+                                    <li>Google Cloud Professional DevOps Engineer</li>
+                                    <li>Kubernetes (CKA, CKAD, CKS)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="outcomes-section">
+                <h3>🎯 After Completing This Course, You Will Be Able To:</h3>
+                <ul class="outcomes-list">
+                    <li>Understand and implement complete DevOps lifecycle</li>
+                    <li>Automate infrastructure provisioning using Terraform and Ansible</li>
+                    <li>Build and manage CI/CD pipelines using Jenkins and AWS services</li>
+                    <li>Deploy containerized applications using Docker and Kubernetes (EKS)</li>
+                    <li>Implement monitoring, logging, and alerting in AWS Cloud</li>
+                    <li>Secure DevOps pipelines following DevSecOps best practices</li>
+                    <li>Design real-time enterprise-level cloud automation workflows</li>
+                </ul>
+            </div>
+
+            <div class="quote-block final-quote">
+                <blockquote>
+                    "Automate. Deploy. Scale. Secure – Become a DevOps Engineer with AWS Cloud!"
+                </blockquote>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>DevOps Learning Hub</h4>
+                <p>Complete DevOps training from fundamentals to advanced topics</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#lifecycle">Lifecycle</a></li>
+                    <li><a href="#syllabus">Syllabus</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#architecture">3-Tier Architecture</a></li>
+                    <li><a href="#culture">Culture & Mindset</a></li>
+                    <li><a href="#benefits">Benefits & Challenges</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DevOps Learning Hub. All rights reserved.</p>
+            <p>Last Updated: 2026 | Version 1.0</p>
+        </div>
+    </footer>
+
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
