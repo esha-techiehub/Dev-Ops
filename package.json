@@ -1,0 +1,50 @@
+{
+  "name": "devsecops-academy",
+  "version": "2.0.0",
+  "description": "Modern DevSecOps Academy Documentation Platform",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "next-themes": "^0.4.4",
+    "framer-motion": "^12.0.0",
+    "lucide-react": "^0.468.0",
+    "@mdx-js/loader": "^3.1.0",
+    "@mdx-js/react": "^3.1.0",
+    "@next/mdx": "^15.1.0",
+    "gray-matter": "^4.0.3",
+    "shiki": "^1.23.1",
+    "mermaid": "^11.4.1",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.6.0",
+    "class-variance-authority": "^0.7.1",
+    "react-hook-form": "^7.54.2",
+    "zustand": "^5.0.2",
+    "cmdk": "^1.0.4",
+    "date-fns": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "@types/mdx": "^2.0.13",
+    "typescript": "^5.7.2",
+    "tailwindcss": "^3.4.17",
+    "postcss": "^8.4.49",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.17.0",
+    "eslint-config-next": "^15.1.0",
+    "@tailwindcss/typography": "^0.5.16"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
